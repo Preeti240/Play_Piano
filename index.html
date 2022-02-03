@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/audiosynth.js"></script>
+    <script src="js/recordAudio.js"></script>
+    <script src="js/playKeyboard.js"></script>
+    <script src="js/vexflow-min.js"></script>
+    <script defer src="js/sheet.js"></script>
+</head>
+
+<body>
+    <main>
+        <div id="count" title="page visits"></div>
+        <div class="info"></div>
+        <canvas id="sheet"></canvas>
+        <div id="keyboard"></div>
+        <div class="record">
+            <div class="ctrl">
+                <div class="start" onclick="startRecording()"></div>
+                <div class="stop" onclick="stopRecording()"></div>
+            </div>
+            <div class="file"></div>
+        </div>
+        <div class="note">
+            <div>
+                
+            </div>
+        </div>
+    </main>
+    <div id="feedback">feedback</div>
+ 
+    <div class="dark"></div>
+    <div class="sheet_toggle"></div>
+    </div>
+
+    <script>
+        playKeyboard();
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
